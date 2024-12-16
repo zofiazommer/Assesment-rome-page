@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rome - Travelog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+    <h1 style="color: white; font-size: 300%; text-align: center; background-color: #1c4587ff;">Rome</h1>
+</body>
+</head>
+
+<body>
+    <div class="navbar">
+    <div class="search-container">
+         <form action="/submit-answer" method="GET">
+            <input type="text" name="query" placeholder="More locations..." required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!--Using Java script to make is fully functional-->
+    <script>
+        function redirectToLocation(event) {
+            event.preventDefault();
+
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            let url = '';
+
+            const locationMap = {
+                "hong kong": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Hong%20Kong%20page/index.html",
+                "macau": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Macau%20page/index.html",
+                "new zeland": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/New%20Zealand%20page/index.html",
+                "rome (italy)": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Rome%20(Italy)%20page/index.html",
+                "madrid (spain)": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Madrid%20(Spain)%20page/index.html",
+                "moscow (russia)": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Moscow%20(Russia)%20page/index.html",
+            };
+
+            url = locationMap[query];
+
+            if (url) {
+                window.location.href = url;
+            } else {
+                alert("Location not found.");
+            }
+        }
+    </script>
+    <div class="nav-links">
+        <a href="#help">Help</a>
+        <a href="#about">About</a>
+        <a href="#travelling">About Travelling</a>
+        <a href="#me">About me</a>
+        <a href="#contact">Contact</a>
+    </div>
+    </div> 
+</body>
+<br>
+<br>
+
+<!--Now an image of Rome-->
+<img src="https://media.timeout.com/images/105211701/750/562/image.jpg" alt="Time Out Rome 2024 | Things to do, Best Restaurants and More"/>
+<p>Rome is the capital city of Italy and of the Lazio region. It is by far one of the most popular tourist destinations with many popular must see sights.</p>
+
+<br>
+<br>
+<br>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>When to go and how to get there</h2>
+            <h4>The best time to go to this artistic world is from mid-March to May from which there isn't a big crowd and warm temperature. 
+                <br> <br>The best way to get there is via airplanes if you live far across the other continents, or there's still the option of going by train but for that of course you need to be close in Europe.</h4>
+        </div>
+        <div class="box">
+            <h2>Things to see and do</h2>
+            <h4>The best places to see are the following:</h4>
+            <ul>
+                <li>Colosseum</li>
+                <li>Trevi fountain</li>
+                <li>Pantheon</li>
+                <li>Roman Forum</li>
+                <li>St. Peter's basilica</li>
+                <li>Villa Borghese</li>
+                <li>Spanish Steps</li>
+                <li>Piazza Navona</li>
+            </ul>
+            <h4>Fore for information about attraction in Rome <a href="https://www.rome.net/">click here</a></h4>
+        </div>
+    </div>
+</body>
+
+<br>
+<br>
+<br>
+
+<body>
+    <div id="slider">
+        <figure>
+            <img src="https://cdn.mos.cms.futurecdn.net/BiNbcY5fXy9Lra47jqHKGK-1200-80.jpg" alt="The Roman Colosseum: Facts about the gladiatorial arena | Live Science"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg" alt="Trevi Fountain - Wikipedia"/>
+            <img src="https://www.archeoroma.org/wp-content/uploads/2016/10/pantheon-rome-dome-558x400.jpg" alt="Pantheon, Rome (Italy): History and Description. Dome and Oculus"/>
+            <img src="https://www.romesightseeing.net/media/hojaok0k/roman-forum.jpg" alt="The Roman Forum: Famous Ruins of Rome"/>
+            <img src="https://cdn-imgix.headout.com/media/images/dbee5d9e466afaef7e03bb78e679bc63-Aerial-view-of-St-Peter&#39;s-Basilica%2CVatican-City-in-Rome.jpg?auto=format&amp;w=1222.3999999999999&amp;h=687.6&amp;q=90&amp;fit=crop&amp;ar=16%3A9&amp;crop=faces" alt="Visit St. Peter&#39;s Basilica | Travel Tips &amp; What to Expect"/>
+            <img src="https://img.static-kl.com/images/media/0DE12F9C-FD24-45D2-878EEBEC5A15A04F" alt="Travel Tips &amp; Articles Rome"/>
+            <img src="https://carpediemtours.com/wp-content/uploads/2020/06/Spanish-Steps-in-Rome-Cover-Image.jpg" alt="The Spanish Steps: A Short Guide - Carpe Diem Tours"/>
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/2b/79/68.jpg" alt="2024) Recorrido a pie por la ciudad: Piazza Navona, Panteón y Fontana de  Trevi"/>
+        </figure>
+    </div>
+</body>
+
+<body>
+    <div class="bottom-nav">
+        <a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Assesment/index.html#home"><i class="fas fa-home"></i>Home</a>
+        <a href="#search"><i class="fas fa-search"></i>Search</a>
+        <a href="#profile"><i class="fas fa-user"></i>Profile</a>
+        <a href="#settings"><i class="fas fa-cog"></i>Settings</a>
+    </div>
+</body>

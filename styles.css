@@ -1,0 +1,161 @@
+/*This is where I used AI to generate me a more interactive navigation bar because I needed some hints on how to make it significantly better */
+
+body{
+    font-family: Comic Sans MS, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c4587ff;
+    padding: 10px 20px;
+}
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: Comic Sans MS;
+}
+.navbar a:hover{
+    background-color: #4a4040;
+    border-radius: 5px;
+}
+.search-container{
+    display: inline-block;
+    align-items: left;
+}
+.search-container input[type="text"]{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-container button{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-container button:hover{
+    background-color: #0056b3;
+}
+
+
+/*This is another AI generated bar*/
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-nav a i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/*This is the first image and intro information*/
+img {
+    float: left;
+    margin-right: 10px;
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+}
+p {
+    font-family: Comic Sans MS;
+    font-size: 40px;
+    margin-left: 600px;
+    margin-right: 20px;
+    border-color: blue;
+    border-style: inset;
+    border-width: 10px;
+    border-radius: 5%;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 20px;
+}
+.box {
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+.box h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+h2 {
+    color: navy;
+    background-color: #cfe2f3ff;
+}
+
+
+/*Now I'm making a slide with images of the attractions*/
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img {
+    float: left;
+    width: 10%;
+
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200;
+    }
+    70% {
+        left: -200;
+    }
+    75% {
+        left: -165%;
+    }
+}
